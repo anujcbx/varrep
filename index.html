@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quantum Manufacturing Intelligence OS</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--gold:#c8a96b;
+--dark:#2a1d0f;
+--cream:#fcfaf5;
+}
+
+body::before{
+content:'';
+position:fixed;
+inset:0;
+background:
+radial-gradient(circle at 15% 20%,rgba(16,185,129,0.12),transparent 24%),
+radial-gradient(circle at 85% 10%,rgba(59,130,246,0.12),transparent 26%),
+radial-gradient(circle at 70% 80%,rgba(245,158,11,0.08),transparent 22%);
+pointer-events:none;
+z-index:-1;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:radial-gradient(circle at top left,#0f172a 0%,#111827 24%,#172033 48%,#f5f1e8 100%);
+color:#0f172a;
+overflow-x:hidden;
+}
+
+.premium-border{
+position:relative;
+overflow:hidden;
+}
+
+.premium-border::before{
+content:'';
+position:absolute;
+inset:0;
+padding:1px;
+border-radius:inherit;
+background:linear-gradient(135deg,rgba(255,255,255,0.7),rgba(200,169,107,0.35),rgba(255,255,255,0.2));
+-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+-webkit-mask-composite:xor;
+mask-composite:exclude;
+pointer-events:none;
+}
+
+.floating{
+animation:floaty 6s ease-in-out infinite;
+}
+
+@keyframes floaty{
+0%,100%{transform:translateY(0px)}
+50%{transform:translateY(-8px)}
+}
+
+.glass-dark{
+background:linear-gradient(135deg,rgba(53,37,16,0.96),rgba(24,18,10,0.98));
+backdrop-filter:blur(22px);
+}
+
+.panel{
+background:rgba(255,255,255,0.92);
+border:1px solid rgba(15,23,42,0.05);
+backdrop-filter:blur(14px);
+box-shadow:0 10px 40px rgba(15,23,42,0.06);
+}
+
+.card-hover{
+transition:all .35s ease;
+}
+
+.card-hover:hover{
+transform:translateY(-8px);
+box-shadow:0 30px 60px rgba(16,185,129,0.12);
+}
+
+.chart-wrap{
+position:relative;
+height:340px;
+width:100%;
+}
+
+.grid-pattern{
+background-image: radial-gradient(rgba(15,23,42,0.05) 1px, transparent 1px);
+background-size: 18px 18px;
+}
+
+.glow{
+box-shadow:0 0 40px rgba(16,185,129,0.15);
+}
+</style>
+</head>
+<body class="grid-pattern min-h-screen p-6 bg-[#f6f1e7]">
+
+<div class="max-w-[1900px] mx-auto space-y-8">
+
+<!-- MANUFACTURING VARIANCE REPORT -->
+<div class="panel premium-border rounded-[44px] overflow-hidden border border-[#b8934d]/40 bg-[#fcfaf5] shadow-[0_40px_120px_rgba(94,67,21,0.12)]">
+
+<div class="grid grid-cols-1 xl:grid-cols-12 min-h-[760px]">
+
+<!-- MAIN -->
+<div class="xl:col-span-10 p-8 bg-[#fcfaf5]">
+
+<div class="flex justify-between items-start mb-8">
+<div>
+<h1 class="text-5xl font-black text-[#5e4315] leading-tight">
+Quantum Manufacturing Intelligence OS
+</h1>
+<p class="text-xl text-[#8b6a2b] mt-4 max-w-4xl leading-relaxed">
+Enterprise operational command system • Predictive manufacturing intelligence • Financial resilience • Risk analytics • Strategic recovery orchestration
+</p>
+
+<div class="mt-8 bg-gradient-to-r from-[#111827] to-[#1e293b] border border-emerald-500/20 rounded-[28px] p-6 max-w-5xl shadow-[0_20px_80px_rgba(16,185,129,0.18)]">
+<p class="text-sm uppercase tracking-[0.2em] text-[#8b6a2b] font-bold">AI DETECTED EXECUTIVE ANOMALY</p>
+<p class="text-lg mt-3 leading-relaxed text-[#5e4315]">
+Manufacturing volatility increased sharply after procurement inflation crossed predictive thresholds. AI confidence engine estimates ₹2.4Cr preventable leakage opportunity through supplier optimization and predictive maintenance automation.
+</p>
+</div>
+</div>
+</div>
+
+<div class="glass-dark rounded-[28px] px-7 py-5 shadow-[0_20px_80px_rgba(0,0,0,0.35)] border border-white/10">
+<p class="text-sm opacity-80">Reporting Period</p>
+<h3 class="text-2xl font-black mt-1">LIVE • MAY 2026</h3>
+</div>
+</div>
+
+<!-- CINEMATIC EXECUTIVE INTELLIGENCE -->
+<div class="grid grid-cols-1 xl:grid-cols-4 gap-5 mb-7">
+
+<div class="relative overflow-hidden rounded-[30px] border border-[#dcc9a0] shadow-lg min-h-[220px] bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1400&auto=format&fit=crop');">
+<div class="absolute inset-0 bg-gradient-to-r from-[#3f2b0c]/90 via-[#5e4315]/70 to-transparent"></div>
+<div class="relative z-10 p-7 text-white flex flex-col justify-end h-full">
+<p class="uppercase tracking-[0.3em] text-xs text-[#f6dfaa] font-bold">GLOBAL PROCUREMENT SHOCK</p>
+<h2 class="text-4xl font-black mt-3 leading-tight">AI predicts margin erosion risk across 3 production clusters</h2>
+<p class="mt-4 text-[#f6e8c6] text-sm leading-relaxed">Raw material inflation and downtime remain the largest financial pressure drivers across all plants.</p>
+</div>
+</div>
+
+<div class="relative overflow-hidden rounded-[30px] border border-[#dcc9a0] shadow-lg min-h-[220px] bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1565008447742-97f6f38c985c?q=80&w=1400&auto=format&fit=crop');">
+<div class="absolute inset-0 bg-gradient-to-t from-[#5e4315]/90 via-[#5e4315]/40 to-transparent"></div>
+<div class="relative z-10 p-7 text-white flex flex-col justify-end h-full">
+<p class="uppercase tracking-[0.3em] text-xs text-[#f6dfaa] font-bold">AUTONOMOUS FACTORY INDEX</p>
+<h2 class="text-4xl font-black mt-3">92.4% Operational Stability</h2>
+<p class="mt-4 text-[#f6e8c6] text-sm">Packaging and maintenance optimization delivered measurable efficiency improvements this quarter.</p>
+</div>
+</div>
+
+<div class="bg-gradient-to-br from-[#5e4315] to-[#3b2b10] rounded-[30px] p-7 text-white shadow-2xl border border-[#7c6230]">
+<p class="uppercase tracking-[0.3em] text-xs text-[#e5d1a5] font-bold">PREDICTIVE FINANCIAL EXPOSURE</p>
+<h2 class="text-5xl font-black mt-5 leading-tight">₹1.7Cr</h2>
+<p class="text-[#e7d8b6] mt-4 text-lg leading-relaxed">
+Projected manufacturing leakage if procurement volatility remains uncontrolled for next 2 quarters.
+</p>
+
+<div class="mt-8 space-y-4">
+<div>
+<div class="flex justify-between text-sm mb-2 text-[#e7d8b6]">
+<span>Procurement Risk</span>
+<span>82%</span>
+</div>
+<div class="h-3 bg-white/10 rounded-full overflow-hidden">
+<div class="h-full w-[82%] bg-red-400 rounded-full"></div>
+</div>
+</div>
+
+<div>
+<div class="flex justify-between text-sm mb-2 text-[#e7d8b6]">
+<span>Operational Stability</span>
+<span>68%</span>
+</div>
+<div class="h-3 bg-white/10 rounded-full overflow-hidden">
+<div class="h-full w-[68%] bg-emerald-400 rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="glass-dark rounded-[32px] p-7 border border-white/10 shadow-2xl floating">
+<div class="flex justify-between items-start">
+<div>
+<p class="uppercase tracking-[0.35em] text-xs text-[#f6dfaa] font-black">NEURAL BOARD COPILOT</p>
+<h2 class="text-4xl font-black mt-4 leading-tight text-white">Enterprise Neural Stability Matrix</h2>
+<p class="mt-4 text-[#d9c49d] leading-relaxed">Autonomous intelligence engine continuously modeling supply-chain pressure, machine instability, labor inefficiency, and EBITDA volatility.</p>
+</div>
+<div class="w-20 h-20 rounded-[28px] bg-white/10 backdrop-blur-xl border border-white/10 flex items-center justify-center text-4xl">✦</div>
+</div>
+
+<div class="mt-8 grid grid-cols-2 gap-4">
+<div class="bg-white/5 rounded-3xl p-5 border border-white/10">
+<p class="text-[#d9c49d] uppercase tracking-[0.2em] text-xs">Stability Index</p>
+<h3 class="text-5xl font-black mt-4 text-emerald-300">87%</h3>
+</div>
+<div class="bg-white/5 rounded-3xl p-5 border border-white/10">
+<p class="text-[#d9c49d] uppercase tracking-[0.2em] text-xs">Risk Prediction</p>
+<h3 class="text-5xl font-black mt-4 text-red-300">High</h3>
+</div>
+</div>
+</div>
+
+</div>
+<!-- KPI CARDS -->
+<div class="grid grid-cols-2 xl:grid-cols-5 gap-6 mb-10">
+
+<div class="bg-gradient-to-b from-[#fffdf8] to-[#f7edd8] border border-[#d8c298] rounded-[24px] p-4 shadow-[0_20px_60px_rgba(94,67,21,0.08)] relative overflow-hidden min-h-[130px]">
+<div class="flex items-center justify-between">
+<div>
+<p class="text-[11px] uppercase tracking-[0.25em] text-[#8b6a2b] font-bold">EnterpAutonomous Efficiency/p>
+<h2 class="text-4xl font-black mt-4 text-[#5e4315]">₹14.8Cr</h2>
+<p class="text-[#8b6a2b] text-sm mt-2">Total Enterprise Spend</p>
+</div>
+<div class="w-12 h-12 rounded-2xl bg-[#5e4315] text-white flex items-center justify-center text-xl shadow-lg">₹</div>
+</div>
+</div>
+
+<div class="bg-gradient-to-b from-[#fffdf8] to-[#f7edd8] border border-[#d8c298] rounded-[24px] p-4 shadow-[0_20px_60px_rgba(94,67,21,0.08)] min-h-[130px]">
+<p class="text-[11px] uppercase tracking-[0.25em] text-[#8b6a2b] font-bold">Predictive Downtime Risk</p>
+<h2 class="text-4xl font-black mt-4 text-red-700">72%</h2>
+<p class="text-red-500 text-sm mt-2">Actual Labor Spend</p>
+</div>
+
+<div class="bg-gradient-to-b from-[#fffdf8] to-[#f7edd8] border border-[#d8c298] rounded-[24px] p-4 shadow-[0_20px_60px_rgba(94,67,21,0.08)] min-h-[130px]">
+<p class="text-[11px] uppercase tracking-[0.25em] text-[#8b6a2b] font-bold">AI Recovery Opportunity</p>
+<h2 class="text-4xl font-black mt-4 text-yellow-700">₹2.4Cr</h2>
+<p class="text-yellow-600 text-sm mt-2">Actual Material Usage</p>
+</div>
+
+<div class="bg-gradient-to-b from-[#fffdf8] to-[#f7edd8] border border-[#d8c298] rounded-[24px] p-4 shadow-[0_20px_60px_rgba(94,67,21,0.08)] min-h-[130px]">
+<p class="text-[11px] uppercase tracking-[0.25em] text-[#8b6a2b] font-bold">Production Cost</p>
+<h2 class="text-4xl font-black mt-4 text-emerald-700">96.2%</h2>
+<p class="text-emerald-600 text-sm mt-2">Production Efficiency</p>
+</div>
+
+<div class="bg-gradient-to-b from-[#fffdf8] to-[#f7edd8] border border-[#d8c298] rounded-[24px] p-4 shadow-[0_20px_60px_rgba(94,67,21,0.08)] min-h-[130px]">
+<p class="text-[11px] uppercase tracking-[0.25em] text-[#8b6a2b] font-bold">Risk Confidence</p>
+<h2 class="text-4xl font-black mt-4 text-cyan-700">87.4%</h2>
+<p class="text-cyan-600 text-sm mt-2">Material Variance</p>
+</div>
+
+</div>
+
+<!-- ADVANCED AI SIMULATOR + INTERACTIVE GANTT -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-6 mb-8">
+
+<div class="xl:col-span-8 bg-gradient-to-br from-[#fffdf8] via-[#f9f1df] to-[#f1dfb8] border border-[#dcc9a0] rounded-[36px] p-8 shadow-2xl overflow-hidden relative glow">
+<div class="absolute top-0 right-0 w-72 h-72 bg-[#d8b36a]/10 rounded-full blur-3xl"></div>
+
+<div class="relative z-10 flex justify-between items-start mb-8">
+<div>
+<p class="uppercase tracking-[0.3em] text-xs text-[#8b6a2b] font-black">AUTONOMOUS DECISION SIMULATOR</p>
+<h2 class="text-4xl font-black text-[#5e4315] mt-3 leading-tight">
+What happens if AI-driven procurement orchestration is activated?
+</h2>
+<p class="text-[#8b6a2b] mt-4 text-lg max-w-3xl leading-relaxed">
+AI-powered simulation engine estimates EBITDA movement, procurement stability, maintenance impact, workforce optimization, and projected recovery opportunities across manufacturing operations.
+</p>
+</div>
+
+<div class="bg-[#5e4315] text-white px-5 py-4 rounded-3xl shadow-2xl min-w-[220px]">
+<p class="text-xs uppercase tracking-[0.2em] text-[#f6dfaa]">Projected Recovery</p>
+<h2 class="text-5xl font-black mt-3">₹3.2Cr</h2>
+<p class="mt-3 text-[#f6e8c6] text-sm">Potential annual recovery</p>
+</div>
+</div>
+
+<div class="grid grid-cols-1 xl:grid-cols-4 gap-5">
+
+<div class="bg-white/80 backdrop-blur-lg rounded-[28px] p-6 border border-[#dcc9a0] shadow-[0_20px_60px_rgba(94,67,21,0.08)]">
+<div class="flex justify-between items-center mb-4">
+<h3 class="font-black text-[#5e4315] text-lg">Raw Material</h3>
+<span class="text-emerald-600 font-black">-8%</span>
+</div>
+<div class="h-3 bg-[#ead8b0] rounded-full overflow-hidden">
+<div class="h-full w-[62%] bg-[#5e4315] rounded-full"></div>
+</div>
+<p class="mt-4 text-[#8b6a2b] leading-relaxed">
+Expected reduction in quarterly procurement burden and supplier volatility.
+</p>
+</div>
+
+<div class="bg-white/80 backdrop-blur-lg rounded-[28px] p-6 border border-[#dcc9a0] shadow-[0_20px_60px_rgba(94,67,21,0.08)]">
+<div class="flex justify-between items-center mb-4">
+<h3 class="font-black text-[#5e4315] text-lg">Maintenance Downtime</h3>
+<span class="text-yellow-600 font-black">-14h</span>
+</div>
+<div class="h-3 bg-[#ead8b0] rounded-full overflow-hidden">
+<div class="h-full w-[48%] bg-yellow-600 rounded-full"></div>
+</div>
+<p class="mt-4 text-[#8b6a2b] leading-relaxed">
+Predictive maintenance lowers breakdown frequency and overtime exposure.
+</p>
+</div>
+
+<div class="bg-white/80 backdrop-blur-lg rounded-[28px] p-6 border border-[#dcc9a0] shadow-[0_20px_60px_rgba(94,67,21,0.08)]">
+<div class="flex justify-between items-center mb-4">
+<h3 class="font-black text-[#5e4315] text-lg">EBITDA Impact</h3>
+<span class="text-emerald-600 font-black">+2.8%</span>
+</div>
+<div class="h-3 bg-[#ead8b0] rounded-full overflow-hidden">
+<div class="h-full w-[78%] bg-emerald-600 rounded-full"></div>
+</div>
+<p class="mt-4 text-[#8b6a2b] leading-relaxed">
+Overall financial stability improves with optimized procurement contracts.
+</p>
+</div>
+
+<div class="bg-[#5e4315] text-white rounded-[28px] p-6 shadow-2xl border border-[#8b6a2b] relative overflow-hidden">
+<div class="absolute top-0 right-0 w-40 h-40 bg-white/5 rounded-full blur-3xl"></div>
+<div class="relative z-10">
+<p class="uppercase tracking-[0.3em] text-xs text-[#f6dfaa] font-black">LIVE COMMAND ENGINE</p>
+<div class="mt-6 space-y-5">
+<div>
+<div class="flex justify-between mb-2 text-sm text-[#f6dfaa]"><span>Procurement Optimization</span><span>82%</span></div>
+<input type="range" value="82" class="w-full accent-yellow-400">
+</div>
+<div>
+<div class="flex justify-between mb-2 text-sm text-[#f6dfaa]"><span>Downtime Reduction</span><span>64%</span></div>
+<input type="range" value="64" class="w-full accent-emerald-400">
+</div>
+<div>
+<div class="flex justify-between mb-2 text-sm text-[#f6dfaa]"><span>Energy Efficiency</span><span>73%</span></div>
+<input type="range" value="73" class="w-full accent-cyan-400">
+</div>
+</div>
+
+<div class="mt-8 grid grid-cols-2 gap-4">
+<div class="bg-white/10 rounded-2xl p-4 border border-white/10">
+<p class="text-xs uppercase tracking-widest text-[#f6dfaa]">EBITDA Recovery</p>
+<h3 class="text-3xl font-black mt-3">+3.4%</h3>
+</div>
+<div class="bg-white/10 rounded-2xl p-4 border border-white/10">
+<p class="text-xs uppercase tracking-widest text-[#f6dfaa]">Cashflow Stabilization</p>
+<h3 class="text-3xl font-black mt-3">₹1.2Cr</h3>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="xl:col-span-4 glass-dark rounded-[36px] p-8 text-white shadow-[0_30px_100px_rgba(0,0,0,0.35)] border border-white/10 premium-border">
+<div class="flex justify-between items-center mb-8">
+<div>
+<p class="uppercase tracking-[0.3em] text-xs text-[#f6dfaa] font-black">Execution Timeline</p>
+<h2 class="text-3xl font-black mt-3">Transformation Execution Matrix</h2>
+</div>
+<div class="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center text-2xl">⏳</div>
+</div>
+
+<div class="space-y-7 mt-10">
+
+<div>
+<div class="flex justify-between text-sm mb-2 text-[#f6dfaa]">
+<span>Supplier Renegotiation</span>
+<span>Q1</span>
+</div>
+<div class="h-5 bg-white/10 rounded-full overflow-hidden">
+<div class="h-full w-[84%] bg-gradient-to-r from-emerald-300 to-emerald-500 rounded-full shadow-lg"></div>
+</div>
+</div>
+
+<div>
+<div class="flex justify-between text-sm mb-2 text-[#f6dfaa]">
+<span>Maintenance Automation</span>
+<span>Q2</span>
+</div>
+<div class="h-5 bg-white/10 rounded-full overflow-hidden">
+<div class="h-full w-[62%] bg-gradient-to-r from-yellow-300 to-yellow-500 rounded-full shadow-lg"></div>
+</div>
+</div>
+
+<div>
+<div class="flex justify-between text-sm mb-2 text-[#f6dfaa]">
+<span>Energy Optimization</span>
+<span>Q3</span>
+</div>
+<div class="h-5 bg-white/10 rounded-full overflow-hidden">
+<div class="h-full w-[48%] bg-gradient-to-r from-cyan-300 to-cyan-500 rounded-full shadow-lg"></div>
+</div>
+</div>
+
+<div>
+<div class="flex justify-between text-sm mb-2 text-[#f6dfaa]">
+<span>Packaging Efficiency</span>
+<span>Q4</span>
+</div>
+<div class="h-5 bg-white/10 rounded-full overflow-hidden">
+<div class="h-full w-[91%] bg-gradient-to-r from-red-300 to-red-500 rounded-full shadow-lg"></div>
+</div>
+</div>
+
+</div>
+
+<div class="mt-8 bg-white/10 rounded-[24px] p-5 border border-white/10">
+<p class="uppercase tracking-[0.2em] text-xs text-[#f6dfaa] font-black">Strategic Outcome</p>
+<h3 class="text-2xl font-black mt-4 leading-snug">
+Projected reduction in annual overspend from ₹1.7Cr → ₹72L
+</h3>
+</div>
+</div>
+
+</div>
+
+<!-- CHART GRID -->
+<div class="grid grid-cols-1 xl:grid-cols-2 gap-7 mb-8">
+
+<div class="bg-white/90 backdrop-blur-xl border border-[#dcc9a0] rounded-[34px] p-7 shadow-[0_20px_60px_rgba(94,67,21,0.08)] premium-border">
+<div class="flex justify-between items-center mb-6">
+<div>
+<h2 class="text-2xl font-black text-[#5e4315]">Predictive Financial Drift</h2>
+</div>
+</div>
+<div class="chart-wrap !h-[300px]">
+<canvas id="deptVarianceChart"></canvas>
+</div>
+</div>
+
+<div class="bg-white/90 backdrop-blur-xl border border-[#dcc9a0] rounded-[34px] p-7 shadow-[0_20px_60px_rgba(94,67,21,0.08)] premium-border">
+<div class="flex justify-between items-center mb-6">
+<div>
+<h2 class="text-2xl font-black text-[#5e4315]">AI Strategic Directives</h2>
+</div>
+</div>
+<div class="chart-wrap !h-[300px]">
+<div class="space-y-5 mt-4">
+<div class="bg-[#f7edd8] rounded-2xl p-5 border border-[#dcc9a0]">
+<h3 class="font-black text-[#5e4315] text-lg">1. Reduce overtime by 9%</h3>
+<p class="text-[#8b6a2b] mt-2">Optimize shift planning and workforce allocation.</p>
+</div>
+<div class="bg-[#f7edd8] rounded-2xl p-5 border border-[#dcc9a0]">
+<h3 class="font-black text-[#5e4315] text-lg">2. Rebalance production to Plant A</h3>
+<p class="text-[#8b6a2b] mt-2">Lower downtime impact and improve utilization.</p>
+</div>
+<div class="bg-[#f7edd8] rounded-2xl p-5 border border-[#dcc9a0]">
+<h3 class="font-black text-[#5e4315] text-lg">3. Lock supplier contracts</h3>
+<p class="text-[#8b6a2b] mt-2">Estimated annual savings potential: ₹58L.</p>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+<!-- LOWER -->
+<div class="grid grid-cols-1 xl:grid-cols-3 gap-6">
+
+<div class="bg-white/90 backdrop-blur-xl border border-[#dcc9a0] rounded-[34px] p-7 shadow-[0_20px_60px_rgba(94,67,21,0.08)] premium-border">
+<h2 class="text-2xl font-black text-[#5e4315] mb-5">Cost Category Split</h2>
+<div class="chart-wrap !h-[260px]">
+<canvas id="costCategoryChart"></canvas>
+</div>
+</div>
+
+<div class="bg-white/90 backdrop-blur-xl border border-[#dcc9a0] rounded-[34px] p-7 shadow-[0_20px_60px_rgba(94,67,21,0.08)] premium-border">
+<h2 class="text-2xl font-black text-[#5e4315] mb-5">Critical Escalation Signals</h2>
+<div class="space-y-4">
+<div class="bg-red-50 border border-red-200 rounded-2xl p-4 flex justify-between items-center">
+<div>
+<h3 class="font-bold text-red-600">Travel Expense</h3>
+<p class="text-sm text-red-400">Operations</p>
+</div>
+<p class="text-2xl font-black text-red-500">+28%</p>
+</div>
+
+<div class="bg-yellow-50 border border-yellow-200 rounded-2xl p-4 flex justify-between items-center">
+<div>
+<h3 class="font-bold text-yellow-700">Marketing Campaign</h3>
+<p class="text-sm text-yellow-500">Sales</p>
+</div>
+<p class="text-2xl font-black text-yellow-600">+12%</p>
+</div>
+
+<div class="bg-red-50 border border-red-200 rounded-2xl p-4 flex justify-between items-center">
+<div>
+<h3 class="font-bold text-red-600">Recruitment Cost</h3>
+<p class="text-sm text-red-400">HR</p>
+</div>
+<p class="text-2xl font-black text-red-500">+31%</p>
+</div>
+</div>
+</div>
+
+<div class="bg-white/90 backdrop-blur-xl border border-[#dcc9a0] rounded-[34px] p-7 shadow-[0_20px_60px_rgba(94,67,21,0.08)] premium-border">
+<h2 class="text-2xl font-black text-[#5e4315] mb-5">Autonomous Intelligence Narrative</h2>
+<div class="space-y-5 text-[#5e4315] leading-relaxed text-[15px]">
+<p>• Maintenance expenses increased 21% after repeated shutdowns.</p>
+<p>• Plant C consumed 14% more energy than benchmark.</p>
+<p>• Packaging improved efficiency and reduced waste by 11%.</p>
+<p>• Labour cost spike linked to overtime rather than hiring.</p>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="xl:col-span-2 bg-gradient-to-b from-[#6b4f1d] to-[#4a3412] text-white p-5 border-l border-white/10">
+
+<div class="bg-white/10 rounded-[24px] p-5 border border-white/10 mb-5">
+<p class="text-xs uppercase tracking-[0.25em] opacity-70">Reporting Month</p>
+<h2 class="text-3xl font-black mt-3">LIVE • MAY 2026</h2>
+<div class="mt-4 h-2 rounded-full bg-white/10 overflow-hidden">
+<div class="h-full w-[78%] bg-emerald-400 rounded-full"></div>
+</div>
+<p class="text-sm mt-3 text-emerald-300">78% Annual Budget Cycle Completed</p>
+</div>
+
+<div class="bg-white/10 rounded-[24px] p-5 border border-white/10 mb-5">
+<h3 class="text-lg font-black mb-4">Risk Exposure</h3>
+<div class="space-y-4">
+<div>
+<div class="flex justify-between text-sm mb-2">
+<span>Raw Material</span>
+<span>High</span>
+</div>
+<div class="h-2 rounded-full bg-white/10 overflow-hidden">
+<div class="h-full w-[84%] bg-red-400 rounded-full"></div>
+</div>
+</div>
+
+<div>
+<div class="flex justify-between text-sm mb-2">
+<span>Maintenance</span>
+<span>Moderate</span>
+</div>
+<div class="h-2 rounded-full bg-white/10 overflow-hidden">
+<div class="h-full w-[58%] bg-yellow-400 rounded-full"></div>
+</div>
+</div>
+
+<div>
+<div class="flex justify-between text-sm mb-2">
+<span>Packaging</span>
+<span>Low</span>
+</div>
+<div class="h-2 rounded-full bg-white/10 overflow-hidden">
+<div class="h-full w-[26%] bg-emerald-400 rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="bg-[#f7edd8] text-[#5e4315] rounded-[24px] p-5 shadow-xl">
+<p class="text-xs uppercase tracking-[0.25em] font-bold text-[#8b6a2b]">BOARD PRIORITY SIGNAL</p>
+<h3 class="text-2xl font-black mt-4 leading-snug">
+Immediate transition toward AI-assisted procurement governance can materially improve enterprise resilience
+</h3>
+<p class="mt-4 text-[15px] leading-relaxed text-[#7b6544]">
+Immediate focus should remain on procurement control, workforce scheduling, and predictive maintenance planning.
+</p>
+</div>
+
+</div>
+
+</div>
+
+<div>
+<div class="flex justify-between text-sm mb-1">
+<span>Threshold Breach</span>
+<span>22%</span>
+</div>
+<div class="h-3 bg-white/10 rounded-full overflow-hidden">
+<div class="h-full w-[22%] bg-yellow-400 rounded-full"></div>
+</div>
+</div>
+
+<div>
+<div class="flex justify-between text-sm mb-1">
+<span>Critical Overspend</span>
+<span>13%</span>
+</div>
+<div class="h-3 bg-white/10 rounded-full overflow-hidden">
+<div class="h-full w-[13%] bg-red-500 rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+window.addEventListener('DOMContentLoaded',()=>{
+
+const commonOptions={
+responsive:true,
+maintainAspectRatio:false,
+plugins:{legend:{labels:{color:'#5e4315',font:{weight:'600'}}}},
+scales:{
+x:{ticks:{color:'#8b6a2b'},grid:{color:'rgba(139,106,43,0.08)'}},
+y:{ticks:{color:'#8b6a2b'},grid:{color:'rgba(139,106,43,0.08)'}}
+}
+};
+
+new Chart(document.getElementById('deptVarianceChart').getContext('2d'),{
+type:'line',
+data:{
+labels:['Line-2','Line-4','Line-3','Line-1'],
+datasets:[{
+label:'Labor Variance %',
+data:[6.2,5.8,5.3,3.6],
+borderColor:'#5e4315',
+backgroundColor:'rgba(94,67,21,0.08)',
+fill:false,
+tension:.45,
+pointRadius:5,
+pointBackgroundColor:'#5e4315'
+}]
+},
+options:commonOptions
+});
+
+// Removed thresholdChart initialization because the canvas element no longer exists in the layout.
+// Leadership Actions section now uses executive insight cards instead of a chart.
+
+new Chart(document.getElementById('costCategoryChart').getContext('2d'),{
+type:'doughnut',
+data:{
+labels:['Fixed','Variable','Semi-Variable'],
+datasets:[{
+data:[42,36,22],
+backgroundColor:['#5e4315','#c4a15c','#ead8b0'],
+borderWidth:0
+}]
+},
+options:{
+responsive:true,
+maintainAspectRatio:false,
+plugins:{legend:{position:'bottom',labels:{color:'#5e4315'}}},
+cutout:'72%'
+}
+});
+
+});
+</script>
+
+</body>
+</html>
